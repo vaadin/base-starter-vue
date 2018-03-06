@@ -1,4 +1,4 @@
-# Base Starter for Vaadin Elements and Vue.js
+# Base Starter for Vaadin components with Vue.js
 
 ## Prerequisites
 
