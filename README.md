@@ -47,8 +47,6 @@ In the `import` section, add:
 
 ``` typescript
 import '@webcomponents/webcomponentsjs/webcomponents-loader.js';
-import '@vaadin/vaadin-button/vaadin-button.js';
-import '@vaadin/vaadin-text-field/vaadin-text-field.js';
 ```
 
 Add the following after the imports section:
@@ -63,17 +61,27 @@ Open `src/App.vue`
 *	Replace all HTML in the `<template>` with:
 ``` html
 <div>
-  <vaadin-text-field id="text" placeholder="Type Something"></vaadin-text-field>
+  <vaadin-text-field ref="textField" id="text" placeholder="Type Something"></vaadin-text-field>
   <vaadin-button @click="clicked">Click Me!</vaadin-button>
   <h2>Hello {{msg}}!</h2>
 </div>
 ```
 
-* In the `<script>` section, inside `default` add the click event:
+* In the `<script>` section
+
+Add imports
+
+``` typescript
+import '@vaadin/vaadin-button/vaadin-button.js';
+import '@vaadin/vaadin-text-field/vaadin-text-field.js';
+```
+
+Inside `default` add the click event:
+
 ``` javascript
 methods: {
   clicked() {
-    this.msg = document.getElementById("text").value;
+    this.msg = this.$refs.textField.value;
   }
 }
 ```
