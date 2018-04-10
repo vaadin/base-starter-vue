@@ -1,6 +1,7 @@
 import Vue from 'vue'
 
-import '@webcomponents/webcomponentsjs/webcomponents-loader.js';
+/** Polyfill required for web components **/
+import '@webcomponents/webcomponentsjs/webcomponents-sd-ce.js';
 
 import App from './App.vue'
 
