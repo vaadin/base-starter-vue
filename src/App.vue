@@ -1,12 +1,15 @@
 <template>
   <div>
-    <vaadin-text-field id="text" placeholder="Type Something"></vaadin-text-field>
+    <vaadin-text-field ref="textField" id="text" placeholder="Type Something"></vaadin-text-field>
     <vaadin-button @click="clicked">Click Me!</vaadin-button>
     <h2>Hello {{msg}}!</h2>
   </div>
 </template>
 
 <script>
+import '@vaadin/vaadin-button/vaadin-button.js';
+import '@vaadin/vaadin-text-field/vaadin-text-field.js';
+
 export default {
   name: 'app',
   data () {
@@ -16,7 +19,7 @@ export default {
   },
   methods: {
     clicked() {
-      this.msg = document.getElementById("text").value;
+      this.msg = this.$refs.textField.value;
     }
   }
 }
