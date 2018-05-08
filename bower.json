@@ -3,10 +3,10 @@
   "description": "A Vue.js project",
   "main": "",
   "authors": [
-    "Jonatan Kronqvist <jonatan@vaadin.com>"
+    "Vaadin Ltd"
   ],
-  "license": "MIT",
-  "homepage": "",
+  "license": "Unlicensed",
+  "homepage": "https://vaadin.com/start/v10-vue",
   "ignore": [
     "**/.*",
     "node_modules",
