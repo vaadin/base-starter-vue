@@ -2,19 +2,19 @@
 
 ## Prerequisites
 
-First [install npm](https://docs.npmjs.com/getting-started/installing-node).
+First [install yarn](https://yarnpkg.com/docs/install).
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ npm install
+$ yarn install
 
 # serve with hot reload at localhost:8080
-$ npm run dev
+$ yarn run dev
 
 # build for production with minification
-$ npm run build
+$ yarn run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
@@ -25,19 +25,19 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 Perform the following commands in a terminal window
 ``` bash
 # install vue-cli
-$ npm install -g vue-cli
+$ yarn global add vue-cli
 
 # initialize the project
 $ vue init webpack-simple hello-vue
 # Keep all the options at their defaults
 
 $ cd hello-vue
-$ npm install
+$ yarn install
 
-$ npm install --save @polymer/polymer@next
-$ npm install --save @vaadin/vaadin-button
-$ npm install --save @vaadin/vaadin-text-field
-$ npm i --save @webcomponents/webcomponentsjs@latest
+$ yarn add @polymer/polymer
+$ yarn add @vaadin/vaadin-button
+$ yarn add @vaadin/vaadin-text-field
+$ yarn add @webcomponents/webcomponentsjs@latest
 ```
 
 
@@ -46,7 +46,7 @@ Open `src/main.js` and
 In the `import` section, add:
 
 ``` typescript
-import '@webcomponents/webcomponentsjs/webcomponents-loader.js';
+import '@webcomponents/webcomponentsjs/bundles/webcomponents-loader.js';
 ```
 
 Add the following after the imports section:
