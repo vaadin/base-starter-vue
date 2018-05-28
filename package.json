@@ -2,7 +2,6 @@
   "name": "hello-vue",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "Jonatan Kronqvist <jonatan@vaadin.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -11,10 +10,10 @@
   },
   "dependencies": {
     "vue": "^2.5.11",
-    "@polymer/polymer": "^3.0.0-pre.12",
-    "@vaadin/vaadin-button": "^2.0.0-pre.2",
-    "@vaadin/vaadin-text-field": "^2.0.1-pre.1",
-    "@webcomponents/webcomponentsjs": "^1.0.0"
+    "@polymer/polymer": "^3.0.0",
+    "@vaadin/vaadin-button": "^2.0.0-pre.4",
+    "@vaadin/vaadin-text-field": "^2.0.1-pre.2",
+    "@webcomponents/webcomponentsjs": "^2.0.0"
   },
   "browserslist": [
     "> 1%",
