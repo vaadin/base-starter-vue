@@ -37,7 +37,7 @@ $ yarn install
 $ yarn add @polymer/polymer
 $ yarn add @vaadin/vaadin-button
 $ yarn add @vaadin/vaadin-text-field
-$ yarn add @webcomponents/webcomponentsjs@latest
+$ yarn add @webcomponents/webcomponentsjs
 ```
 
 
