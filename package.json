@@ -11,9 +11,9 @@
   "dependencies": {
     "vue": "^2.5.11",
     "@polymer/polymer": "^3.0.0",
-    "@vaadin/vaadin-button": "^2.0.0-pre.4",
-    "@vaadin/vaadin-text-field": "^2.0.1-pre.2",
-    "@webcomponents/webcomponentsjs": "^2.0.0"
+    "@vaadin/vaadin-button": "^2.1.0",
+    "@vaadin/vaadin-text-field": "^2.1.1",
+    "@webcomponents/webcomponentsjs": "^2.1.1"
   },
   "browserslist": [
     "> 1%",
