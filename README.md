@@ -38,6 +38,7 @@ $ yarn add @polymer/polymer
 $ yarn add @vaadin/vaadin-button
 $ yarn add @vaadin/vaadin-text-field
 $ yarn add @webcomponents/webcomponentsjs
+$ yarn add @webcomponents/template
 ```
 
 
@@ -46,7 +47,8 @@ Open `src/main.js` and
 In the `import` section, add:
 
 ``` typescript
-import '@webcomponents/webcomponentsjs/bundles/webcomponents-loader.js';
+import '@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js';
+import '@webcomponents/template/template.js';
 ```
 
 Add the following after the imports section:

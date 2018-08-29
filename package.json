@@ -9,11 +9,12 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.5.11",
     "@polymer/polymer": "^3.0.0",
     "@vaadin/vaadin-button": "^2.1.0",
     "@vaadin/vaadin-text-field": "^2.1.1",
-    "@webcomponents/webcomponentsjs": "^2.1.1"
+    "@webcomponents/template": "^1.4.0",
+    "@webcomponents/webcomponentsjs": "^2.1.1",
+    "vue": "^2.5.11"
   },
   "browserslist": [
     "> 1%",
