@@ -11,10 +11,10 @@ First [install yarn](https://yarnpkg.com/docs/install).
 $ yarn install
 
 # serve with hot reload at localhost:8080
-$ yarn run dev
+$ yarn serve
 
 # build for production with minification
-$ yarn run build
+$ yarn build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
@@ -25,18 +25,16 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 Perform the following commands in a terminal window
 ``` bash
 # install vue-cli
-$ yarn global add vue-cli
+$ yarn global add @vue/cli
 
 # initialize the project
-$ vue init webpack-simple hello-vue
+$ vue create hello-world
 # Keep all the options at their defaults
 
 $ cd hello-vue
 $ yarn install
 
-$ yarn add @polymer/polymer
-$ yarn add @vaadin/vaadin-button
-$ yarn add @vaadin/vaadin-text-field
+$ yarn add @vaadin/vaadin-core
 $ yarn add @webcomponents/webcomponentsjs
 $ yarn add @webcomponents/template
 ```
