@@ -36,25 +36,23 @@ $ yarn install
 
 $ yarn add @vaadin/vaadin-core
 $ yarn add @webcomponents/webcomponentsjs
-$ yarn add @webcomponents/template
 ```
 
+Add `vue.config.js` file with the following content:
+
+``` javascript
+module.exports = {
+  transpileDependencies: [/@vaadin\/.*/, /@polymer\/.*/, /@webcomponents\/.*/]
+}
+```
 
 Open `src/main.js` and
 
 In the `import` section, add:
 
 ``` typescript
-import '@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js';
-import '@webcomponents/template/template.js';
-```
-
-Add the following after the imports section:
-
-``` javascript
-Vue.config.ignoredElements = [
-  '/^vaadin-/'
-]
+import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js';
+import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
 ```
 
 Open `src/App.vue`
