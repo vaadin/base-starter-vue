@@ -11,10 +11,10 @@ First [install yarn](https://yarnpkg.com/docs/install).
 $ yarn install
 
 # serve with hot reload at localhost:8080
-$ yarn run dev
+$ yarn serve
 
 # build for production with minification
-$ yarn run build
+$ yarn build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
@@ -25,38 +25,34 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 Perform the following commands in a terminal window
 ``` bash
 # install vue-cli
-$ yarn global add vue-cli
+$ yarn global add @vue/cli
 
 # initialize the project
-$ vue init webpack-simple hello-vue
+$ vue create hello-world
 # Keep all the options at their defaults
 
 $ cd hello-vue
 $ yarn install
 
-$ yarn add @polymer/polymer
-$ yarn add @vaadin/vaadin-button
-$ yarn add @vaadin/vaadin-text-field
+$ yarn add @vaadin/vaadin-core
 $ yarn add @webcomponents/webcomponentsjs
-$ yarn add @webcomponents/template
 ```
 
+Add `vue.config.js` file with the following content:
+
+``` javascript
+module.exports = {
+  transpileDependencies: [/@vaadin\/.*/, /@polymer\/.*/, /@webcomponents\/.*/]
+}
+```
 
 Open `src/main.js` and
 
 In the `import` section, add:
 
 ``` typescript
-import '@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js';
-import '@webcomponents/template/template.js';
-```
-
-Add the following after the imports section:
-
-``` javascript
-Vue.config.ignoredElements = [
-  '/^vaadin-/'
-]
+import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js';
+import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
 ```
 
 Open `src/App.vue`
